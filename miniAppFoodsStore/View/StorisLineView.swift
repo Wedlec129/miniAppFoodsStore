@@ -1,5 +1,5 @@
 //
-//  RowStoris.swift
+//  StorisLineView.swift
 //  miniAppFoodsStore
 //
 //  Created by Борух Соколов on 15.08.2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StorisLine: View {
+struct StorisLineView: View {
     
     @EnvironmentObject var storisViewModel: StorisViewModel
     
@@ -56,10 +56,10 @@ struct StorisLine: View {
     }
 }
 
-struct StorisLine_Previews: PreviewProvider {
+struct StorisLineView_Previews: PreviewProvider {
     static var previews: some View {
         
-        StorisLine()
+        StorisLineView()
             .environmentObject(StorisViewModel())
         
         
