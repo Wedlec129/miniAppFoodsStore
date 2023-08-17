@@ -16,7 +16,7 @@ struct ShowBonusView: View {
         
         //Text(" \(accountViewModel.saleBlock.ball)")
         Rectangle()
-            .frame(width: .infinity,height: 150)
+            .frame(height: 150)
             .cornerRadius(20)
             .foregroundColor(.mint)
             .overlay(content: {

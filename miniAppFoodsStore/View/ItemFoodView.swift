@@ -94,6 +94,7 @@ struct ItemFoodView: View {
                 }
                 
             }
+            
         }
         
     }

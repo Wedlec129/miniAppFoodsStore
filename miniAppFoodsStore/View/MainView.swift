@@ -22,7 +22,7 @@ struct MainView: View {
         TabView{
             
             NavigationView(){
-                ScrollView(.vertical){
+                ScrollView(.vertical,showsIndicators: false){
                     VStack{
                         StorisLineView()
                             .environmentObject(storisViewModel)
@@ -33,16 +33,23 @@ struct MainView: View {
                         SpesialAdsView()
                             .environmentObject(spesialAdsViewModel)
                         
-                        NavigationView(){
+                       
+                        VStack(alignment: .leading){
+                            Text("Рекомендуем")
+                                .font(.title)
+                                .padding()
                             ItemFoodView(onlyCategory: .recomend)
                                 .environmentObject(itemFoodViewModel)
-                                .navigationTitle("Рекомендуем")
-                        }
-                        NavigationView(){
+                            
+                            Text("Сладкое настроение")
+                                .font(.title)
+                                .padding()
                             ItemFoodView(onlyCategory: .suggarHappy)
                                 .environmentObject(itemFoodViewModel)
-                                .navigationTitle("Cладкое настроение")
                         }
+                       
+                           
+                           
                     }
                     
                 }
