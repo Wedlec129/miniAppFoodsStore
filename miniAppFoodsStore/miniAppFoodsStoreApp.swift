@@ -11,7 +11,13 @@ import SwiftUI
 struct miniAppFoodsStoreApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView(storisViewModel:StorisViewModel(),saleBlockLineViewModel: SaleBlockLineViewModel(),accountViewModel: AccountViewModel())
+            MainView(
+                     storisViewModel:StorisViewModel(),
+                     saleBlockLineViewModel: SaleBlockLineViewModel(),
+                     accountViewModel: AccountViewModel(),
+                     spesialAdsViewModel: SpesialAdsViewModel(),
+                     itemFoodViewModel: ItemFoodViewModel()
+            )
               
         }
     }

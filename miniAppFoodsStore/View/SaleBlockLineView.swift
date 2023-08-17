@@ -39,7 +39,9 @@ struct SaleBlockLineView: View {
                             
                         })
                 }
+                
             }
+            .padding()
             
         }
     }

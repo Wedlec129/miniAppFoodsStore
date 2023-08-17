@@ -50,10 +50,13 @@ struct StorisLineView: View {
                 }
                 
             }
+            .padding()
         }
         
         
+        
     }
+    
 }
 
 struct StorisLineView_Previews: PreviewProvider {
